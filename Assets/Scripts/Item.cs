@@ -13,6 +13,10 @@ public class Item : MonoBehaviour {
     //returns true if item is kept, false if destroyed
     public bool Use()
     {
+        ItemMixin[] mixins = GetComponents<ItemMixin> ();
+        foreach (ItemMixin mixin in mixins)
+            mixin.Use();
+        
         return !consumable;
     }
 }
