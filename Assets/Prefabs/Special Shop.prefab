@@ -75,6 +75,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224686702992411132}
+  - component: {fileID: 114582873098332348}
   - component: {fileID: 222475298938151086}
   - component: {fileID: 114292685258017212}
   - component: {fileID: 114469611845307916}
@@ -247,6 +248,22 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &114582873098332348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1598941511724898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f77581ed61545d3a3710216062c469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  content: {fileID: 224686702992411132}
+  itemUIPrefab: {fileID: 114916833797476430, guid: 47d7222e2dcd24ea8889cc483fdeeb86,
+    type: 2}
+  showPlayerInventory: 1
 --- !u!114 &114594726566482470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -284,6 +301,7 @@ MonoBehaviour:
   content: {fileID: 224823636286184168}
   itemUIPrefab: {fileID: 114916833797476430, guid: 47d7222e2dcd24ea8889cc483fdeeb86,
     type: 2}
+  showPlayerInventory: 0
 --- !u!114 &114936912570966440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,6 +318,11 @@ MonoBehaviour:
   - {fileID: 114374464554381046, guid: 65e05e4aa57f44638b9a642b2c078ae4, type: 2}
   - {fileID: 114343306479708066, guid: 65e05e4aa57f44638b9a642b2c078ae4, type: 2}
   isPlayerInventory: 0
+  onChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!222 &222046610558558290
 CanvasRenderer:
   m_ObjectHideFlags: 1
